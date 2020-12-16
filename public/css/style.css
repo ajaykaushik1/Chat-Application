@@ -24,7 +24,7 @@ html {
   height: 70vh;
   border: 2px solid black;
   border-radius: 2rem;
-  margin: 0 auto;
+  margin: 5px auto;
   box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
   background: linear-gradient(rgb(60, 241, 157), rgb(240, 220, 200));
   overflow-y: auto;
@@ -87,4 +87,16 @@ html {
 }
 .btn:hover {
   background: rgb(103, 233, 201);
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 95vw;
+    height: 60vh;
+  }
+  #input {
+    width: 75vw;
+  }
+  .heading h1 {
+    font-size: 2.5rem;
+  }
 }
