@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: cursive;
+}
+
+.main_div {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgb(255, 255, 255), rgb(209, 101, 121));
+  overflow-x: hidden;
+}
+.heading h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 4rem auto;
+}
+.container {
+  width: 50vw;
+  height: 70vh;
+  border: 2px solid black;
+  border-radius: 2rem;
+  margin: 0 auto;
+  box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
+  background: linear-gradient(rgb(60, 241, 157), rgb(240, 220, 200));
+  overflow-y: auto;
+  padding: 2rem;
+}
+.message {
+  width: auto;
+  height: auto;
+  color: white;
+  font-size: 2rem;
+  padding: 0.2rem 0.6rem;
+  border: 2px solid rgb(204, 218, 20);
+  border-radius: 1rem;
+  margin: 3px 0;
+}
+.messageLeft {
+  background: rgb(97, 29, 175);
+  float: left;
+  clear: both;
+}
+.messageRight {
+  background: rgb(16, 74, 160);
+  float: right;
+  clear: both;
+}
+.joined_user_message {
+  width: auto;
+  height: auto;
+  font-weight: bold;
+  display: grid;
+  place-items: center;
+  color: black;
+  font-size: 1.8rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 1rem;
+  margin: 3px 0;
+  clear: both;
+}
+.send {
+  text-align: center;
+}
+#input {
+  width: 45vw;
+  width: 45vw;
+  height: auto;
+  padding: 0.5rem;
+  font-size: 2.3rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+}
+.btn {
+  width: auto;
+  height: auto;
+  padding: 0.5rem;
+  font-size: 2.3rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+  background: rgb(218, 113, 113);
+  cursor: pointer;
+}
+.btn:hover {
+  background: rgb(103, 233, 201);
+}
