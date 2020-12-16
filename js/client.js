@@ -1,3 +1,4 @@
+// const port = process.env.PORT || 8000;
 const socket = io("http://localhost:8000");
 const user = prompt("enter your name");
 const form = document.getElementById("form");
