@@ -1,5 +1,13 @@
 const port = process.env.PORT || 8000;
-const io = require("socket.io")(port);
+const INDEX = "./index.html";
+const express = require("express");
+const path = require("path");
+const static_path = path.join(__dirname, "/public");
+const server = express()
+  .use(express.static(static_path))
+  .listen(port, () => console.log(`Listening on ${port}`));
+const io = require("socket.io")(server);
+// const io = socketIO(server);
 const users = {};
 io.on("connection", (socket) => {
   socket.on("new_user_joined", (name) => {

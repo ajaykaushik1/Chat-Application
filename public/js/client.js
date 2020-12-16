@@ -1,7 +1,5 @@
 // const port = process.env.PORT || 8000;
-const socket = io(
-  "https://chat-app-by-ajay-kaushik.herokuapp.com/socket.io/socket.io.js"
-);
+const socket = io("http://localhost:8000");
 const user = prompt("enter your name");
 const form = document.getElementById("form");
 const messageText = document.getElementById("input");
